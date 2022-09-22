@@ -3,18 +3,156 @@
 	padding: 0;
 	box-sizing: content-box;
 }
+/*######################
+#######################
+### MOBILE VERSION ####
+#######################
+######################*/
 
+body {
+	height: 100vh;
+}
+/*######################
+#######################
+##### HEADER###########
+#######################
+######################*/
+
+body > header {
+	display: flex;
+	justify-content: center;
+	padding: 1rem;
+	font-family: "Times New Roman", Times, serif;
+}
+/*########################
+##########################
+###### LANDING PAGE  ####
+#########################
+#########################
+*/
 body > section.landing {
 	background-image: url("../images/landing.jpg");
-	height: 90vh;
+	height: 30vh;
 	background-size: contain;
+	font-family: sans-serif;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	padding: 1rem;
 }
 
-/*
-Colors:
+body > section.landing > p {
+	padding: 2rem 5.5rem;
+}
+body > section.images > h2 {
+	text-align: center;
+}
 
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
+/*############################
+##############################
+######## SECTION ICONS #######
+##############################
+#############################*/
+section.images {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem;
+	padding-top: 2rem;
+}
+section.images > h2 {
+	border-bottom: #00b172 solid 3px;
+}
+body > section.images > div {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	gap: 1rem;
+	align-items: center;
+	padding: 1rem 1rem;
+}
+body > section.images > div > ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	width: 200px;
+}
+body > section.images > div > ul > li > h3 {
+	color: #00b172;
+}
+body > section.images > div > ul > li > img {
+	height: 40px;
+	width: 40px;
+}
 
-*/
+body > section.final {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 4rem 4rem;
+
+	background-color: #00b172;
+	color: white;
+}
+body > section.final > div {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+body > section.final > div h2 {
+	border-bottom: white 3px solid;
+	font-size: 1.4rem;
+	text-align: center;
+}
+
+body > section.final > div > ul {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	gap: 1.5rem;
+}
+
+img {
+	width: 100px;
+}
+
+.desktop {
+	display: none;
+}
+
+/*############################
+##############################
+######## DESKTOP VERSION #####
+##############################
+#############################*/
+
+@media (min-width: 500px) {
+	/*############################
+##############################
+######## SECTION HEADER #####
+##############################
+#############################*/
+
+	body > header {
+		display: flex;
+		justify-content: space-between;
+		padding: 2rem 2rem;
+	}
+	body > header > img {
+		width: 150px;
+	}
+
+	header > ul.desktop {
+		display: block;
+		display: flex;
+		list-style: none;
+		gap: 2rem;
+	}
+}
