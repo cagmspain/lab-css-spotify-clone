@@ -11,6 +11,7 @@
 
 body {
 	height: 100vh;
+	font-family: sans-serif;
 }
 /*######################
 #######################
@@ -22,7 +23,8 @@ body > header {
 	display: flex;
 	justify-content: center;
 	padding: 1rem;
-	font-family: "Times New Roman", Times, serif;
+	font-family: monospace;
+	text-align: center;
 }
 /*########################
 ##########################
@@ -34,7 +36,7 @@ body > section.landing {
 	background-image: url("../images/landing.jpg");
 	height: 30vh;
 	background-size: contain;
-	font-family: sans-serif;
+
 	color: white;
 	display: flex;
 	flex-direction: column;
@@ -135,15 +137,20 @@ img {
 
 @media (min-width: 500px) {
 	/*############################
-##############################
-######## SECTION HEADER #####
-##############################
-#############################*/
-
+    ##############################
+    ######## SECTION HEADER #####
+    ##############################
+    #############################*/
+	body {
+		font-family: sans-serif;
+	}
 	body > header {
 		display: flex;
 		justify-content: space-between;
-		padding: 2rem 2rem;
+		padding: 1rem 4rem;
+		align-items: center;
+		font-family: sans-serif;
+		font-size: 1.2rem;
 	}
 	body > header > img {
 		width: 150px;
@@ -154,5 +161,101 @@ img {
 		display: flex;
 		list-style: none;
 		gap: 2rem;
+	}
+	/*############################
+    ##############################
+    ######## SECTION LANDING #####
+    ##############################
+    #############################*/
+	body > section.landing {
+		height: 85vh;
+		font-size: 3rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	body > section.landing > h1 {
+		text-align: center;
+	}
+	body > section.landing > p {
+		margin: 2rem 2rem;
+		padding: 1rem 10rem;
+		font-size: 1.3rem;
+		width: 600px;
+		text-align: center;
+	}
+	/*############################
+    ##############################
+    ######## SECTION IMAGES #####
+    ##############################
+    #############################*/
+
+	body > section.images {
+		height: 50vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 3rem;
+		font-size: 1.5rem;
+		padding-left: 0rem;
+		padding-bottom: 2rem;
+	}
+	body > section.images > div {
+		width: 100vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		overflow: hidden;
+		padding-left: 0rem;
+	}
+	body > section.images > div > ul {
+		font-size: 1.2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	body > section.images > div > ul > li > h3 {
+		padding-bottom: 1rem;
+	}
+	body > section.images > div > ul > li > img {
+		width: 100px;
+		height: 80px;
+	}
+	/*############################
+    ##############################
+    ######## FINAL SECTION #####
+    ##############################
+    #############################*/
+
+	body > section.final {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 80vh;
+		flex-wrap: wrap;
+		background-color: #00b172;
+		background-image: url("../images/spotify-icon-white.png");
+		background-size: 150px;
+		background-repeat: no-repeat;
+		background-position: center;
+		padding: 4rem 5rem;
+	}
+
+	body > section.final > img {
+		display: block;
+		width: 300px;
+	}
+	body > section.final > div {
+		font-size: 1.5rem;
+		width: 400px;
+	}
+	body > section.final > div > h2 {
+		font-size: 2rem;
 	}
 }
