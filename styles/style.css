@@ -47,7 +47,8 @@ body > section.landing {
 }
 
 body > section.landing > p {
-	padding: 2rem 5.5rem;
+	padding: 2rem 5rem;
+	text-align: center;
 }
 body > section.images > h2 {
 	text-align: center;
@@ -89,6 +90,9 @@ body > section.images > div > ul {
 }
 body > section.images > div > ul > li > h3 {
 	color: #00b172;
+}
+body > section.images > div > ul > li {
+	text-align: center;
 }
 body > section.images > div > ul > li > img {
 	height: 40px;
@@ -135,7 +139,7 @@ img {
 ##############################
 #############################*/
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
 	/*############################
     ##############################
     ######## SECTION HEADER #####
